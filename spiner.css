@@ -1,0 +1,111 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family: sans-serif;
+    
+  }
+  .mainbox{
+    width: 500px;
+    height: 500px;  
+    position: relative;
+    margin: 100px 200px; 
+  }
+  .mainbox::after{
+    content: '';
+    position: absolute;
+    top: -30px;
+    left: 50%;
+    transform: translateY(-50%);
+    background-image: url("https://img.icons8.com/ios-filled/50/down2.png");
+    height: 50px;
+    width: 50px;
+  }
+  .box{
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    position: relative;
+    border-radius: 50%;
+    border: 5px solid black;
+    transition: 3s;
+  }
+  .spiner-circel2 {
+    width: 100%;
+    height: 100%;
+    transform: rotate(-135deg);
+  }
+  
+  .spinpart {
+    width: 50%;
+    height: 50%;
+    display: block;
+    /* background-color: aquamarine;  */
+    position: absolute;
+  }
+  
+  .o1 {
+    clip-path: polygon(0% 95%, 101% 52%, 0% 6%);
+    background-color: brown;
+    top: 120px;
+    left: 0;
+  }
+  
+  .o2 {
+    clip-path: polygon(100% 97%, 0% 53%, 100% 8%);
+    background-color: #ffe97c;
+    top: 120px;
+    right: 0;
+  }
+  
+  .o3 {
+    clip-path: polygon(52% -1%, 8% 100%, 94% 100%);
+    background-color: rgba(0, 81, 244, 0.954);
+    bottom: 0 ;
+    left: 120px;
+  }
+  
+  .o4 {
+    clip-path: polygon(52% 100%, 95% 0%, 10% 0%);
+    background-color: rgb(4, 255, 0);
+    left: 120px;
+    top: 0;
+  }
+  .spinpart b{
+    width: 65px;
+    height: 65px;
+    line-height: 65px;
+    border-radius: 50%;
+    font-size: 20px;
+    text-align: center;
+    background-color: #ffffff;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+  }
+  button{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    border: 5px solid rgb(224, 22, 255);
+    background-color: rgb(250, 201, 252);
+    color: black;
+    font-size: 20px;
+    box-shadow: 0 0 10px 7px rgb(228, 228, 228);
+    cursor: pointer;
+  }
+  button:active{
+    width: 70px;
+    height: 70px;
+    box-shadow: 0 0 5px 5px transparent;
+  }
+  button:disabled{
+    background-color: azure;
+    color: grey;
+    box-shadow: none;
+    border-color: rgb(116, 116, 116);
+  }
